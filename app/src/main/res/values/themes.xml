@@ -32,6 +32,14 @@
     <style name="GameSpaceTheme.Panel" parent="GameSpaceTheme">
         <item name="cardBackgroundColor">@color/surface</item>
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowBlurBehindRadius">50px</item>
+        <item name="android:windowBlurBehindEnabled">true</item>
+        <item name="android:windowBackgroundBlurRadius">100px</item>
     </style>
 
     <style name="GameSpaceTheme.Panel.Tile">
