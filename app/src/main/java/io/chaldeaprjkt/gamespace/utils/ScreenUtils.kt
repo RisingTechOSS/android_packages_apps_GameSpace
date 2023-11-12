@@ -83,8 +83,8 @@ class ScreenUtils @Inject constructor(private val context: Context) {
         }
         remoteRecording = null
         if (isGestureLocked) {
-            Settings.System.putInt(context.contentResolver,
-                    Settings.System.LOCK_EDGE_BACK_GESTURE, 0)
+            Settings.Secure.putInt(context.contentResolver,
+                    Settings.Secure.LOCK_IMMERSIVE_SYSUI, 0)
             isGestureLocked = false
         }
     }
@@ -92,7 +92,6 @@ class ScreenUtils @Inject constructor(private val context: Context) {
     fun takeScreenshot(onComplete: ((Uri?) -> Unit)? = null) {
         val handler = Handler(Looper.getMainLooper())
         ScreenshotHelper(context).takeScreenshot(
-            WindowManager.TAKE_SCREENSHOT_FULLSCREEN,
             WindowManager.ScreenshotSource.SCREENSHOT_GLOBAL_ACTIONS, handler
         ) { handler.post { onComplete?.invoke(it) } }
     }
@@ -112,8 +111,8 @@ class ScreenUtils @Inject constructor(private val context: Context) {
     var lockGesture = false
         get() = isGestureLocked
         set(enable) {
-            Settings.System.putInt(context.contentResolver,
-                    Settings.System.LOCK_EDGE_BACK_GESTURE, if (enable) 1 else 0)
+            Settings.Secure.putInt(context.contentResolver,
+                    Settings.Secure.LOCK_IMMERSIVE_SYSUI, if (enable) 1 else 0)
             field = enable
             isGestureLocked = enable
         }
