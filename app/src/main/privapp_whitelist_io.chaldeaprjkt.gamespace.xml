@@ -28,5 +28,6 @@
         <permission name="android.permission.ANSWER_PHONE_CALLS" />
         <permission name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
     </privapp-permissions>
 </permissions>
