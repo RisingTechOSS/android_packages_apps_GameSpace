@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) Chaldeaprjkt
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+  -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">Game Space</string>
+    <string name="settings_summary">Настройка игровых возможностей</string>
+    <string name="app_selector_label">Выберите свою игру</string>
+    <string name="auto_brightness_disabled_title">Отключить авто-яркость</string>
+    <string name="auto_brightness_disabled_summary">Не менять яркость пока вы в игре</string>
+    <string name="heads_up_disabled_title">Отключить уведомления</string>
+    <string name="heads_up_disabled_summary">Отключить всплывающие уведомления пока вы в игре</string>
+    <string name="game_list_title">Библиотека</string>
+    <string name="game_remove_message">Вы уверены, что хотите удалить %1$s из своей библиотеки?</string>
+    <string name="app_search_title">Поиск</string>
+    <string name="three_screenshot_disabled_summary">Временно отключить жест тремя пальцами для скриншота во время игры.</string>
+    <string name="three_screenshot_disabled_title">Отключить свайп для скриншота</string>
+    <string name="chaldea">chaldeaprjkt</string>
+    <string name="state_enabled">Включено</string>
+    <string name="state_disabled">Выключено</string>
+    <string name="state_default">По умолчанию</string>
+    <!-- Game Mode Name - sorted by GameManager's enum, do not modify the sequence! -->
+    <string name="game_mode_title">Режим</string>
+    <string-array name="game_mode_names">
+        <item>Не поддерживается</item>
+        <item>Баланс</item>
+        <item>Скорость</item>
+        <item>Экономия</item>
+    </string-array>
+    <string name="fps_Info_title">Информация о FPS</string>
+    <string name="stay_awake_title">Не отключать</string>
+    <string name="stay_awake_title">Не отключать экран</string>
+    <string name="stay_awake_summary">Не отключать экран, пока вы в игре</string>
+
+    <string name="ringer_mode_title">Режим звонка в игре</string>
+    <string-array name="ringer_mode_entries">
+        <item>Без звука</item>
+        <item>Вибрация</item>
+        <item>Обычный</item>
+        <item>Не изменять</item>
+    </string-array>
+
+    <string name="suppress_fullscreen_intent_title">Блокировать полноэкранные уведомления</string>
+    <string name="suppress_fullscreen_intent_summary">Предотвращать появление полноэкранных уведомлений, таких как входящие вызовы, во время игры.</string>
+
+    <string name="per_app_title">Настроить игру</string>
+    <string name="per_app_mode_title">Предпочтительный режим</string>
+    <string-array name="per_app_preferred_mode_entries">
+        <item>Стандартный</item>
+        <item>Производительный</item>
+        <item>Экономный</item>
+    </string-array>
+
+    <string name="per_app_angle_title">Использовать ANGLE (эксперементально)</string>
+    <string name="per_app_angle_summary">Использование рендеринга ANGLE вместо собственных драйверов GLES.\nВНИМАНИЕ!!  Может ломать игровую графику, использовать с осторожностью!</string>
+    <string name="cant_find_angle_pkg">ANGLE недоступен в вашей системе</string>
+
+    <string name="per_app_unregister">Удалить %1$s из библиотеки</string>
+
+    <string name="adb_disabled_summary">Отключить отладку по USB ADB во время игры.</string>
+    <string name="adb_disabled_title">Отключить отладку по USB</string>
+
+    <string name="battery_format"><xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
+    <string name="memory_format">Использовано ОЗУ: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
+
+    <!-- Notification Mode -->
+    <string name="notification_mode_title">Режим уведомлений</string>
+    <string name="notification_mode_hide">Не показывать</string>
+    <string name="notification_mode_headsup">Показывать в виде всплывающих уведомлений</string>
+    <string name="notification_mode_reticker">Показывать в стиле reTicker</string>
+    <string name="notification_mode_danmaku">Показывать в стиле Danmaku</string>
+
+    <string name="notification_hide">Скрыть</string>
+    <string name="notification_headsup">Всплывающее уведомление</string>
+    <string name="notification_reticker">reTicker</string>
+    <string name="notification_danmaku">Danmaku</string>
+    
+    <!-- Ringer Mode -->
+    <string name="in_game_calls_title">Режим звонка</string>
+    <string name="in_game_calls_no_action">Нет действия</string>
+    <string name="in_game_calls_auto_answer">Автоматический ответ</string>
+    <string name="in_game_calls_auto_reject">Автоматический сброс</string>
+    <string name="in_game_calls_received_number">Поступил звонок от %1$s</string>
+    <string name="in_game_calls_rejected_number">Отклонён вызов от %1$s</string>
+    
+    <!-- Danmaku Notification Mode -->
+    <string name="danmaku_notification_mode_title">Режим уведомления Danmaku</string>
+    <string name="danmaku_notification_mode_summary">Показывать уведомление в виде комментариев danmaku aka bullet, пока игра активнаe</string>
+</resources>
